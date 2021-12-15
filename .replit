@@ -1,0 +1,2 @@
+language = "asm"
+run = "nasm -f elf32 ex1.asm -o ex1.o"
