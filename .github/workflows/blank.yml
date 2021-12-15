@@ -32,6 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          sudo apt install nasm -y
           nasm -f elf32 ex1.asm -o ex1.o
           ld -m elf_i386 ex1.o -o ex1
           ./ex1
